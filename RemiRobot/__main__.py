@@ -53,58 +53,58 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [💖](https://telegra.ph/file/1b4b218a4d3a55bef2143.jpg) `My name is` *Remi*
+`Hey There!` [❄️](https://telegra.ph/file/62927055cb73f79bd1e26.jpg) `My name is` *Lugia*
 `I am an Anime themed group management bot.
-Managed by @Horimaya for Your Telegram Group , I specialize in managing anime and similar themed groups.
-You can find my list of available commands with! Hit` *💗Help💗*   
+Managed by @TeamMonsterSupport for Your Telegram Group , I specialize in managing anime and similar themed groups.
+You can find my list of available commands with! Hit` *❄️Help❄️*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="💓ADD ME IN YOUR GROUP💓",url="t.me/RemiTheRobot?startgroup=true"),
+            text="➕ADD ME IN YOUR GROUP➕",url="t.me/LUGIATHEBOT?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-              text="💗Help💗", callback_data="help_back"),
+              text="❄️Help❄️", callback_data="help_back"),
      
     ],
     [
         InlineKeyboardButton(
-              text="💘My Owner💘", url="https://t.me/Horimaya"),
+              text="My Owner😎", url="https://t.me/HEMANTHGAMING1K"),
      
     ],
     [
         InlineKeyboardButton(
-            text="💞Check My Friend💞", url="https://t.me/NekoXRobot"),
+            text="💞Check My Friend💞", url="https://t.me/HG_PIKACHU_BOT"),
 
     ],
     [
         InlineKeyboardButton(
-            text="Source code", url="https://GitHub.com/Hodacka/RemiRobot"),
+            text="HG BOTS", url="https://t.me/hgbotsupportgroup"),
 
     ],
     [
         InlineKeyboardButton(
-            text="🤍Bot Support🤍", url="https://t.me/RemiSupport"),
+            text="❄️Bot Support❄️", url="https://t.me/TeamMonsterSupport"),
           
 
 
 InlineKeyboardButton(
-            text="💙Updates💙", url="https:https://t.me/CrowdXStrike"
+            text="💙Updates💙", url="https:https://t.me/TeamMonsterUpdates"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="💚Support💚", url="t.me/CrowdStrikeChat"
+                    text="🔥AigerAkabane🔥", url="t.me/AigerAkabaneBot"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-*Remi is here! 
+*Lugia is here! 
 I Use My Powers To Help Admins To Manage Their Groups! 
 *Main* commands available :
  • /help: PM's you this message.
@@ -112,13 +112,13 @@ I Use My Powers To Help Admins To Manage Their Groups!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/6fb556db667331a61eda5.jpg) *!* 
+For all command use /* [or](https://telegra.ph/file/e62309e50fc576d744107.jpg) *!* 
 """
 
-START_IMG = "https://telegra.ph/file/deb2f79fa80f20a633a91.mp4"
+START_IMG = "https://telegra.ph/file/75e7c03b842b8d7b25107.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Remi Owner](t.me/Horimaya) or [Dev](T.me/cRaZyBoY_420)."""
+ You can support the project via [Lugia Owner](t.me/HEMANTHGAMING1K) or [Dev](T.me/TheAloneX)."""
 
 
 
@@ -230,17 +230,17 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(
-            START_IMG, caption= "<code>Remi is Here 💞\nI am Awake Since</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>Lugia is Here ❄️\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url="t.me/NekoXSupport")
+                  InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url="t.me/TeamMonsterSupport")
                   ],
                   [
-                  InlineKeyboardButton(text="𝙐𝙥𝙙𝙖𝙩𝙚", url="https://t.me/CrowdXStrike")
+                  InlineKeyboardButton(text="𝙐𝙥𝙙𝙖𝙩𝙚", url="https://t.me/TeamMonsterUpdates")
                   ]
                 ]
             ),
